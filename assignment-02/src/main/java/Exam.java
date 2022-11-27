@@ -1,4 +1,10 @@
+import java.text.DateFormat;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+import java.util.Date;
+import java.util.Locale;
 
 public class Exam {
     int id;
@@ -7,7 +13,8 @@ public class Exam {
     CategoryQuestion category;
     int duration;
     Account creator;
-    LocalDateTime createdDate;
+    LocalDateTime createDate;
+
     Question[] questions;
 
     @Override
@@ -16,8 +23,10 @@ public class Exam {
                 "id=" + id +
                 ", code='" + code + '\'' +
                 ", title='" + title + '\'' +
-                ", duration=" + duration +
-                ", createdDate=" + createdDate +
-                '}';
+                ", duration=" + duration ;
     }
+
+
 }
+
+
